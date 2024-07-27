@@ -165,9 +165,7 @@ MOVIE INFO PAGE
   flex-direction: column;
   padding-left: 20px;
 }
-.movie__title--text {
-  text-align: center;
-}
+
 .movie__img {
   width: 380px;
   display: flex;
@@ -208,6 +206,17 @@ SPINNER
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
+/*
+
+SMALL SCREENS
+
+*/
 @media (max-width: 1200px) {
   .movie {
     width: calc(100% / 2);
