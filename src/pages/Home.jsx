@@ -123,10 +123,9 @@ const Home = () => {
                           />
                           <h1 className="movie__title">{movie.Title}</h1>
                           <div className="small__description">
-
-                          <p>{movie.Year}</p>
-                          <p>Runtime: {movie.Runtime}</p>
-                          <p>Rating: {movie.imdbRating}/10</p>
+                            <p>{movie.Year}</p>
+                            <p>Runtime: {movie.Runtime}</p>
+                            <p>Rating: {movie.imdbRating}/10</p>
                           </div>
                         </Link>
                       </div>
