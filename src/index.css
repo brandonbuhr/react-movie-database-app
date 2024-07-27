@@ -207,11 +207,6 @@ SPINNER
   }
 }
 
-
-
-
-
-
 /*
 
 SMALL SCREENS
@@ -225,5 +220,9 @@ SMALL SCREENS
 @media (max-width: 850px) {
   .movie {
     width: 100%;
+  }
+  .movie__container {
+    display: flex;
+    flex-direction: column;
   }
 }
