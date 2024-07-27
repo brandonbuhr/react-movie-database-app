@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const MovieInfo = () => {
   const { id } = useParams();
@@ -22,12 +22,23 @@ const MovieInfo = () => {
   }
 
   return (
-    <div>
-      <h1>{movie.Title}</h1>
-      <img src={movie.Poster} alt={movie.Title} />
-      <p>{movie.Plot}</p>
+    <>
+        <Link to="/">
+          <button className="movie__info--btn">Back to Search</button>
+        </Link>
+    <div className="movie__container">
 
+    <div className="movie__info--img--container">
+
+        <img src={movie.Poster} alt={movie.Title} className="movie__img" />
     </div>
+      <div className="movie__info--container">
+
+        <h1 className="movie__title--text">{movie.Title}</h1>
+        <p>{movie.Plot}</p>
+      </div>
+    </div>
+    </>
   );
 };
 

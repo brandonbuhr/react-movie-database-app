@@ -25,6 +25,7 @@ li {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 h1 {
   padding-bottom: 24px;
@@ -117,12 +118,16 @@ MOVIE DISPLAY
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 96px;
 }
 
 .movie__poster {
   max-width: 380px;
   width: 100%;
+}
+.movie__poster:hover {
+  transform: translateY(8px);
+  transition: all 300ms ease;
 }
 .movies__list {
   display: flex;
@@ -140,6 +145,43 @@ MOVIE DISPLAY
   font-size: 24px;
 }
 
+/*
+
+
+
+
+MOVIE INFO PAGE
+
+
+
+
+*/
+.movie__info--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movie__title--text {
+  text-align: center;
+}
+.movie__img {
+  width: 380px;
+  display: flex;
+}
+.movie__info--btn {
+  position: absolute;
+  left: 0;
+  margin: 24px;
+  border-radius: 24px;
+  padding: 12px;
+}
+.movie__info--btn:hover {
+  cursor: pointer;
+}
+.movie__container {
+  display: flex;
+  margin-top: 80px;
+}
 /*
 
 SPINNER
