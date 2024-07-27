@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -109,7 +111,7 @@ const Home = () => {
                 id="loading"
                 style={{ display: loading ? "block" : "none" }}
               >
-                <i className="fas fa-spinner"></i>
+                <FontAwesomeIcon icon={faSpinner} spin />
               </div>
               <div className="movies__list">
                 {movies.length > 0
