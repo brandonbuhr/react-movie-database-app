@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
 const Home = () => {
   const [query, setQuery] = useState("");
   const [movies, setMovies] = useState([]);
@@ -115,16 +114,22 @@ const Home = () => {
               <div className="movies__list">
                 {movies.length > 0
                   ? movies.map((movie) => (
-                        <div className="movie">
-                      <Link to={`/movie/${movie.imdbID}`} key={movie.imdbID}>
+                      <div className="movie">
+                        <Link to={`/movie/${movie.imdbID}`} key={movie.imdbID}>
                           <img
                             src={movie.Poster}
                             alt={movie.Title}
                             className="movie__poster"
                           />
                           <h1 className="movie__title">{movie.Title}</h1>
-                      </Link>
-                        </div>
+                          <div className="small__description">
+
+                          <p>{movie.Year}</p>
+                          <p>Runtime: {movie.Runtime}</p>
+                          <p>Rating: {movie.imdbRating}/10</p>
+                          </div>
+                        </Link>
+                      </div>
                     ))
                   : !loading && <h3>No movies found</h3>}
               </div>
