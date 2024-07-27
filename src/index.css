@@ -126,7 +126,7 @@ MOVIE DISPLAY
   width: 100%;
 }
 .movie__poster:hover {
-  transform: translateY(8px);
+  transform: translateY(4px);
   transition: all 300ms ease;
 }
 .movies__list {
@@ -159,7 +159,7 @@ MOVIE INFO PAGE
 .movie__info--container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 20px;
 }
 .movie__title--text {
   text-align: center;
@@ -177,10 +177,14 @@ MOVIE INFO PAGE
 }
 .movie__info--btn:hover {
   cursor: pointer;
+  background-color: lightgrey;
 }
 .movie__container {
   display: flex;
-  margin-top: 80px;
+  margin: 80px 24px;
+}
+.movie__info--item {
+  margin-top: 20px;
 }
 /*
 
@@ -200,12 +204,12 @@ SPINNER
     transform: rotate(360deg);
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .movie {
     width: calc(100% / 2);
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .movie {
     width: 100%;
   }

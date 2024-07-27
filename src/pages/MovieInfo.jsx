@@ -23,21 +23,50 @@ const MovieInfo = () => {
 
   return (
     <>
-        <Link to="/">
-          <button className="movie__info--btn">Back to Search</button>
-        </Link>
-    <div className="movie__container">
-
-    <div className="movie__info--img--container">
-
-        <img src={movie.Poster} alt={movie.Title} className="movie__img" />
-    </div>
-      <div className="movie__info--container">
-
-        <h1 className="movie__title--text">{movie.Title}</h1>
-        <p>{movie.Plot}</p>
+      <Link to="/">
+        <button className="movie__info--btn">
+          <strong>Back to Search</strong>
+        </button>
+      </Link>
+      <div className="movie__container">
+        <div className="movie__info--img--container">
+          <img src={movie.Poster} alt={movie.Title} className="movie__img" />
+        </div>
+        <div className="movie__info--container">
+          <h2 className="movie__title--text">{movie.Title}</h2>
+          <p className="movie__info--item">
+            <strong>Year:</strong> {movie.Year}
+          </p>
+          <p className="movie__info--item">
+            <strong>Genre:</strong> {movie.Genre}
+          </p>
+          <p className="movie__info--item">
+            <strong>Director:</strong> {movie.Director}
+          </p>
+          <p className="movie__info--item">
+            <strong>Actors:</strong> {movie.Actors}
+          </p>
+          <p className="movie__info--item">
+            <strong>Runtime:</strong> {movie.Runtime}
+          </p>
+          <p className="movie__info--item">
+            <strong>Language:</strong> {movie.Language}
+          </p>
+          <p className="movie__info--item">
+            <strong>Country:</strong> {movie.Country}
+          </p>
+          <p className="movie__info--item">
+            <strong>IMDB Rating:</strong> {movie.imdbRating}
+          </p>
+          <p className="movie__info--item">
+            <strong>Awards:</strong> {movie.Awards}
+          </p>
+          <p className="movie__info--item">
+            <strong>Plot Summary</strong>
+          </p>
+          <p className="movie__info--item">{movie.Plot}</p>
+        </div>
       </div>
-    </div>
     </>
   );
 };
