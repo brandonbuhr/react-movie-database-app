@@ -19,7 +19,7 @@ const MovieInfo = () => {
   }, [id]);
 
   if (!movie) {
-    return <div>Loading...</div>;
+    return <div>Loading</div>;
   }
 
   return (
