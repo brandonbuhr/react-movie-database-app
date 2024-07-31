@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useLocation } from "react-router-dom";
 
 const MovieInfo = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
+  const location = useLocation();
   const apiKey = "f4cc1001";
 
   useEffect(() => {
@@ -23,7 +24,10 @@ const MovieInfo = () => {
 
   return (
     <>
-      <Link to="/">
+      <Link
+        to="/"
+        state={{ query: location.state ? location.state.query : "" }}
+      >
         <button className="movie__info--btn">
           <strong>Back to Search</strong>
         </button>

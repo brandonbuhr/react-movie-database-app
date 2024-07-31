@@ -10,7 +10,14 @@ const Home = () => {
   const apiKey = "f4cc1001";
 
   useEffect(() => {
-    searchMovies();
+    const storedQuery = sessionStorage.getItem("query");
+    const storedMovies = JSON.parse(sessionStorage.getItem("movies"));
+    if (storedQuery && storedMovies) {
+      setQuery(storedQuery);
+      setMovies(storedMovies);
+    } else {
+      searchMovies();
+    }
   }, []);
 
   const handleSearchInputChange = (event) => {
@@ -61,6 +68,8 @@ const Home = () => {
       }
 
       setMovies(sortedMovies);
+      sessionStorage.setItem("query", query);
+      sessionStorage.setItem("movies", JSON.stringify(sortedMovies));
     } else {
       setMovies([]);
     }
@@ -116,8 +125,8 @@ const Home = () => {
               <div className="movies__list">
                 {movies.length > 0
                   ? movies.map((movie) => (
-                      <div className="movie">
-                        <Link to={`/movie/${movie.imdbID}`} key={movie.imdbID}>
+                      <div className="movie" key={movie.imdbID}>
+                        <Link to={`/movie/${movie.imdbID}`}>
                           <img
                             src={movie.Poster}
                             alt={movie.Title}
