@@ -91,6 +91,7 @@ const Home = () => {
                   value={query}
                   onChange={handleSearchInputChange}
                   onKeyDown={handleSearchKeyPress}
+                  placeholder="Search for a movie..."
                 />
                 <button
                   className="search__btn"
