@@ -121,7 +121,7 @@ MOVIE DISPLAY
 }
 
 .movie__poster {
-  max-width: 380px;
+  max-width: 340px;
   width: 100%;
 }
 .movie__poster:hover {
@@ -139,6 +139,7 @@ MOVIE DISPLAY
 .movie__title {
   font-size: 28px;
   text-align: center;
+  max-width: 340px;
 }
 .movie__year {
   font-size: 24px;
@@ -224,5 +225,19 @@ SMALL SCREENS
   .movie__container {
     display: flex;
     flex-direction: column;
+  }
+  .search__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .search__bar {
+    margin-bottom: 20px;
+  }
+  .search__btn {
+    max-width: 100px;
+  }
+  .sort {
+    max-width: 100px;
   }
 }
