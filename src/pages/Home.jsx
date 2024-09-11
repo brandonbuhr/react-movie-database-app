@@ -90,7 +90,7 @@ const Home = () => {
                   id="Input"
                   value={query}
                   onChange={handleSearchInputChange}
-                  onKeyDown={handleSearchKeyPress}
+                  onKeyUp={handleSearchKeyPress}
                   placeholder="Search for a movie..."
                 />
                 <button
@@ -109,9 +109,9 @@ const Home = () => {
                     Sort
                   </option>
                   <option value="ALPHABETICAL">A-Z</option>
-                  <option value="RATING">Rating</option>
-                  <option value="RELEASE_DATE">Release date</option>
-                  <option value="RUNTIME">Runtime</option>
+                  <option value="RATING">Rating: High-Low</option>
+                  <option value="RELEASE_DATE">Release Date: Oldest-Newest</option>
+                  <option value="RUNTIME">Runtime: Low-High</option>
                 </select>
               </div>
             </div>
