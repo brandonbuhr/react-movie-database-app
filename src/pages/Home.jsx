@@ -82,7 +82,7 @@ const Home = () => {
         <header>
           <div className="header__container">
             <div className="header__description">
-              <h1>Find all of your favorite movies at Movie Center</h1>
+              <h1>Find all your favorite movies at Movie Center</h1>
               <div className="search__box">
                 <input
                   type="text"
@@ -110,7 +110,9 @@ const Home = () => {
                   </option>
                   <option value="ALPHABETICAL">A-Z</option>
                   <option value="RATING">Rating: High-Low</option>
-                  <option value="RELEASE_DATE">Release Date: Oldest-Newest</option>
+                  <option value="RELEASE_DATE">
+                    Release Date: Oldest-Newest
+                  </option>
                   <option value="RUNTIME">Runtime: Low-High</option>
                 </select>
               </div>
