@@ -201,7 +201,7 @@ MOVIE INFO PAGE
 }
 .movie__info--btn:hover {
   cursor: pointer;
-  background-color: lightgrey;
+  border-color: green;
 }
 .movie__container {
   display: flex;
