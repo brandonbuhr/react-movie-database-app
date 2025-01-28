@@ -240,7 +240,11 @@ SMALL SCREENS
   }
 }
 @media (max-width: 850px) {
+  .movies__list {
+    margin-top: 10px;
+  }
   .movie {
+    margin-top: 20px;
     width: 100%;
   }
   .movie__container {
@@ -251,6 +255,7 @@ SMALL SCREENS
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 14px;
   }
   .search__bar {
     margin-bottom: 20px;
