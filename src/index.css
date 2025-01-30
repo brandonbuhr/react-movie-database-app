@@ -40,7 +40,8 @@ h3 {
   padding: 8px;
 }
 .movie-center-title {
-  font-size: 50px;
+  margin-top: 12px;
+  font-size: 48px;
 }
 .nav__container {
   width: 100%;
@@ -265,5 +266,50 @@ SMALL SCREENS
   }
   .sort {
     max-width: 100px;
+  }
+}
+
+/*
+
+Smaller Screens
+
+*/
+@media (max-width: 360px) {
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .movies__list {
+    margin-top: 10px;
+  }
+  .movie {
+    width: 100%px;
+  }
+  .movie__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .search__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 96px;
+  }
+  .search__bar {
+    margin-bottom: 20px;
+  }
+  .search__btn {
+    margin-bottom: 24px;
+    max-width: 100px;
+  }
+  .sort {
+    max-width: 100px;
+  }
+  .nav__link {
+    visibility: hidden;
+  }
+  .movie-center-title {
+    font-size: 40px;
   }
 }
