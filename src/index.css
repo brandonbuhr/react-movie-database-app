@@ -91,6 +91,7 @@ h3 {
   font-size: 20px;
   padding: 8px;
   border-color: white;
+  border: 3px solid;
 }
 .search__btn {
   font-size: 20px;
@@ -101,6 +102,7 @@ h3 {
   margin-left: 20px;
   margin-right: 20px;
   border-color: white;
+  border: 3px solid;
 }
 .search__btn:hover {
   cursor: pointer;
@@ -114,6 +116,7 @@ h3 {
   min-height: 40px;
   border-color: white;
   border-radius: 40px;
+  border: 3px solid;
 }
 .sort:hover {
   cursor: pointer;
