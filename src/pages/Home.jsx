@@ -7,7 +7,7 @@ const Home = () => {
   const [query, setQuery] = useState("");
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
-  const apiKey = "f4cc1001";
+  const apiKey = process.env.REACT_APP_OMDB_API_KEY;
 
   useEffect(() => {
     const storedQuery = sessionStorage.getItem("query");

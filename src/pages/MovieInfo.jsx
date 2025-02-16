@@ -5,7 +5,7 @@ const MovieInfo = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
   const location = useLocation();
-  const apiKey = "f4cc1001";
+  const apiKey = process.env.REACT_APP_OMDB_API_KEY;
 
   useEffect(() => {
     async function fetchMovie() {
