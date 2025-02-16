@@ -39,34 +39,43 @@ const MovieInfo = () => {
         <div className="movie__info--container">
           <h2 className="movie__title--text">{movie.Title}</h2>
           <p className="movie__info--item">
-            <strong>Year:</strong> {movie.Year}
+            <strong className="movie__info--item--title">Year:</strong>{" "}
+            {movie.Year}
           </p>
           <p className="movie__info--item">
-            <strong>Genre:</strong> {movie.Genre}
+            <strong className="movie__info--item--title">Genre:</strong>{" "}
+            {movie.Genre}
           </p>
           <p className="movie__info--item">
-            <strong>Director:</strong> {movie.Director}
+            <strong className="movie__info--item--title">Director:</strong>{" "}
+            {movie.Director}
           </p>
           <p className="movie__info--item">
-            <strong>Actors:</strong> {movie.Actors}
+            <strong className="movie__info--item--title">Actors:</strong>{" "}
+            {movie.Actors}
           </p>
           <p className="movie__info--item">
-            <strong>Runtime:</strong> {movie.Runtime}
+            <strong className="movie__info--item--title">Runtime:</strong>{" "}
+            {movie.Runtime}
           </p>
           <p className="movie__info--item">
-            <strong>Language:</strong> {movie.Language}
+            <strong className="movie__info--item--title">Language:</strong>{" "}
+            {movie.Language}
           </p>
           <p className="movie__info--item">
-            <strong>Country:</strong> {movie.Country}
+            <strong className="movie__info--item--title">Country:</strong>{" "}
+            {movie.Country}
           </p>
           <p className="movie__info--item">
-            <strong>IMDB Rating:</strong> {movie.imdbRating}
+            <strong className="movie__info--item--title">IMDB Rating:</strong>{" "}
+            {movie.imdbRating}
           </p>
           <p className="movie__info--item">
-            <strong>Awards:</strong> {movie.Awards}
+            <strong className="movie__info--item--title">Awards:</strong>{" "}
+            {movie.Awards}
           </p>
           <p className="movie__info--item">
-            <strong>Plot Summary</strong>
+            <strong className="movie__info--item--title">Plot Summary</strong>
           </p>
           <p className="movie__info--item">{movie.Plot}</p>
         </div>
