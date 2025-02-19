@@ -141,7 +141,7 @@ MOVIE DISPLAY
 .movie__poster {
   max-width: 340px;
   min-width: 340px;
-  width: 100%;
+  max-height: 500px;
 }
 .movie__poster:hover {
   transform: translateY(4px);
@@ -188,8 +188,7 @@ MOVIE INFO PAGE
 
 .movie__img {
   max-width: 340px;
-  min-width: 340px;
-  width: 100%;
+  max-height: 500px;
   margin-left: 12px;
   display: flex;
 }
