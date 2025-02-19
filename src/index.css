@@ -6,7 +6,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: rgb(28, 154, 196);
 }
 
 nav {
@@ -28,7 +28,6 @@ li {
 }
 a {
   text-decoration: none;
-  color: black;
 }
 h1 {
   padding-bottom: 24px;
@@ -51,12 +50,12 @@ h3 {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  margin-top: 24px;
 }
 .nav__link {
   margin-left: 16px;
   text-decoration: none;
   font-size: 20px;
-  color: white;
   font-weight: bold;
   padding: 8px;
 }
@@ -90,6 +89,10 @@ h3 {
   height: 100%;
   font-size: 20px;
   padding: 8px;
+}
+.search__bar:focus {
+  outline: none;
+  border: 3px solid rgb(28, 154, 196);
 }
 .search__btn {
   font-size: 20px;
@@ -210,10 +213,10 @@ MOVIE INFO PAGE
   margin-top: 20px;
   font-size: larger;
   max-width: 350px;
+  color: white;
 }
 .movie__info--item--title {
   font-size: x-large;
-  color: rgb(28, 154, 196);
 }
 /*
 
